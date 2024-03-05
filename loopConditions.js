@@ -67,13 +67,14 @@ fizzbuzz(100)
 
 
 
-function printPattern(rows) {
-    for (let i = 1; i <= rows; i++) {
-        let plusSigns = '+'.repeat(rows - i + 1);
-        let hyphens = '-'.repeat(i);
-        console.log(plusSigns + hyphens);
+var rows = 5;
+for(let i = 0; i < rows; i++) {
+    let row = "";
+    for(let j = 0; j < rows; j++) {
+        if(i + j < rows - 1)
+            row += "+ ";
+        else
+            row += "- ";
     }
+    console.log(row);
 }
-
-// Call the function with the number of rows
-printPattern(5);
