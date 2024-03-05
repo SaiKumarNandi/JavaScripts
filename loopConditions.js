@@ -60,3 +60,20 @@ function fibonacci(term){
     
 }
 fizzbuzz(100)
+
+
+
+
+
+
+
+function printPattern(rows) {
+    for (let i = 1; i <= rows; i++) {
+        let plusSigns = '+'.repeat(rows - i + 1);
+        let hyphens = '-'.repeat(i);
+        console.log(plusSigns + hyphens);
+    }
+}
+
+// Call the function with the number of rows
+printPattern(5);
